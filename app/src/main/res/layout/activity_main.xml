@@ -1,18 +1,87 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <EditText
+        android:id="@+id/edtText"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/white"
+        android:backgroundTint="#F3D7AF"
+        android:paddingTop="20dp"
+        android:hint="Enter equation"
+        android:textStyle="bold"
+        android:inputType="text"/>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <RelativeLayout
+        android:id="@+id/level1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/edtText"
+        android:padding="10dp">
+<!--        <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_alignParentEnd="true"-->
+<!--            android:layout_alignParentBottom="true"-->
+<!--            android:layout_marginRight="30dp"-->
+<!--            android:layout_marginBottom="40dp"-->
+<!--            android:src="@drawable/ic_add"-->
+<!--            android:backgroundTint="@color/white"-->
+<!--            app:backgroundTint="@color/white"-->
+<!--            app:rippleColor="@color/white"-->
+<!--            android:id="@+id/fab"/>-->
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/acbtn"
+            android:layout_width="400dp"
+            android:layout_height="400dp"
+            android:layout_marginLeft="20dp" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/plnbtn"
+            android:layout_toRightOf="@+id/acbtn"
+            android:layout_marginLeft="20dp"/>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/modbtn"
+            android:layout_toRightOf="@+id/plnbtn"
+            android:layout_marginLeft="20dp"/>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/divbtn"
+            android:layout_toRightOf="@+id/modbtn"
+            android:layout_marginLeft="20dp"
+            app:fabSize="auto"
+            app:maxImageSize="56dp"/>
+
+
+
+
+    </RelativeLayout>
+
+
+
+<!--    <info.androidhive.fontawesome.FontTextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="@string/fa_user_alt_slash_solid"-->
+<!--        android:textColor="#f88"-->
+<!--        android:textSize="25sp"-->
+<!--        app:solid_icon="true" />-->
+
+
+
+</RelativeLayout>
