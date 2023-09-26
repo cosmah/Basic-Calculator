@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "861967098548",
+    "project_id": "namer-15404",
+    "storage_bucket": "namer-15404.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:861967098548:android:a915903f8a3c456f846de1",
+        "android_client_info": {
+          "package_name": "com.cosmah.basiccalculator"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "861967098548-s72q57sl0dq0c0ffu5v9m210jk4pbpog.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCbDA5YZM5aILiYqo9tSUkWXbIvDvKwVuc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "861967098548-s72q57sl0dq0c0ffu5v9m210jk4pbpog.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
